@@ -1,0 +1,118 @@
+* {
+    color: lightgrey;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: rgb(42, 42, 42);
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #cc40cc;
+}
+.main-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.results-wrapper {
+    display: flex;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.players-result-block  {
+    
+    padding: 15px;
+}
+.players-result-block  h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.players-options button {
+    border: 3px solid #cc40cc;
+    margin: 0 25px;
+    border-radius: 15px;
+}
+.players-options img {
+    height: 120px;
+}
+
+.results-title {
+    font-size: 3rem;
+    flex-basis: 100%;
+    margin: 0;
+}
+
+.result-message-container {
+    width: 380px;
+    height: 260px;
+    padding: 10px;
+    position: fixed;
+    top: -100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #cc40cc;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; 
+    transition: all ease-in-out .25s;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-message-container h5 {
+    color: #FFF;
+    font-size: 1.625rem;
+}
+
+h3.result {
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(159, 159, 159, 0.35);
+    z-index: 10;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: initial;
+}
+
+.restart-button {
+    border: 3px solid #cc40cc;
+    color: purple;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: fixed;
+    right: 5vw;
+    top: 5vh;
+}
+.restart-button:hover {
+    background: lightgrey;
+}

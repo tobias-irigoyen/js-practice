@@ -1,12 +1,12 @@
 // Obtener botones rock, paper o scissors
-let choiceRock = document.querySelector('.rockPlayer1');
-let choicePaper = document.querySelector('.paperPlayer1');
-let choiceScissor = document.querySelector('.scissorPlayer1');
-let restartButton = document.querySelector('.restart-button');
+var choiceRock = document.querySelector('.rockPlayer1');
+var choicePaper = document.querySelector('.paperPlayer1');
+var choiceScissor = document.querySelector('.scissorPlayer1');
+var restartButton = document.querySelector('.restart-button');
 
 // Obtener contenedores de puntajes
-let resultPlayer1 = document.querySelector('.player-1-result');
-let resultPc = document.querySelector('.player-2-result');
+var resultPlayer1 = document.querySelector('.player-1-result');
+var resultPc = document.querySelector('.player-2-result');
 
 
 // Función para reiniciar el puntaje
@@ -18,7 +18,7 @@ restartButton.addEventListener('click', function() {
 });
 
 // Obtener modal
-let resultModal = document.querySelector('.modal');
+var resultModal = document.querySelector('.modal');
 
 // Función para cerrar modal
 resultModal.addEventListener('click', function() {
@@ -26,8 +26,8 @@ resultModal.addEventListener('click', function() {
 });
     
 // Inicializar contadores de puntaje
-let resultPlayerCounter = 0;
-let resultPcCounter = 0;
+var resultPlayerCounter = 0;
+var resultPcCounter = 0;
 
 
 // Insertar los contadores en 0 al DOM
@@ -43,11 +43,11 @@ function randCpuChoice () {
 }
 
 // Variable con la jugada random de la PC
-let pcChoice = randCpuChoice();
+var pcChoice = randCpuChoice();
 
 
 // Variable con la jugada del humano
-let playerChoice;
+var playerChoice;
 
 // *** Elección jugada del humano
 
@@ -70,7 +70,7 @@ choiceScissor.addEventListener('click', function() {
 });
 
 // Obtener elemento de mensaje con feedback de jugada
-let resultMessage = document.querySelector('.result-message');
+var resultMessage = document.querySelector('.result-message');
 
 
 // *** Funciones con resultados
